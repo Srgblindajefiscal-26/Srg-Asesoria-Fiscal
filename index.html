@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srg Grom | Asesoría Contable y Fiscal</title>
+<meta name="description" content="Asesoría contable y fiscal para personas físicas y empresas. Especialistas en el giro de construcción: registro de obra, SIROC, REPSE e informativas STPS.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0b2545; --azul2:#13315c; --dorado:#e0a526; --claro:#f4f6fa;
+    --texto:#1f2937; --gris:#6b7280; --verde:#25d366;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Montserrat',Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.6}
+  a{color:inherit}
+  .contenedor{max-width:1100px;margin:0 auto;padding:0 20px}
+
+  /* Menú */
+  nav{position:sticky;top:0;z-index:50;background:var(--azul);box-shadow:0 2px 10px rgba(0,0,0,.2)}
+  nav .contenedor{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;flex-wrap:wrap;gap:10px}
+  .logo{color:#fff;font-weight:800;font-size:1.3rem;text-decoration:none}
+  .logo span{color:var(--dorado)}
+  .menu{display:flex;gap:18px;flex-wrap:wrap}
+  .menu a{color:#dbe4f0;text-decoration:none;font-size:.9rem;font-weight:600}
+  .menu a:hover{color:var(--dorado)}
+
+  /* Portada */
+  header{background:linear-gradient(135deg,var(--azul) 0%,var(--azul2) 60%,#1d4e89 100%);color:#fff;padding:90px 0 80px;text-align:center}
+  header h1{font-size:2.6rem;font-weight:800;margin-bottom:14px}
+  header h1 span{color:var(--dorado)}
+  header p{font-size:1.15rem;max-width:720px;margin:0 auto 30px;color:#dbe4f0}
+  .boton{display:inline-block;padding:14px 28px;border-radius:40px;font-weight:700;text-decoration:none;transition:transform .2s}
+  .boton:hover{transform:translateY(-3px)}
+  .b-whats{background:var(--verde);color:#fff}
+  .b-dorado{background:var(--dorado);color:var(--azul)}
+  .botones{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  /* Secciones */
+  section{padding:70px 0}
+  section:nth-of-type(even){background:var(--claro)}
+  h2{font-size:2rem;color:var(--azul);text-align:center;margin-bottom:12px}
+  .subtitulo{text-align:center;color:var(--gris);max-width:700px;margin:0 auto 40px}
+  .rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .tarjeta{background:#fff;border-radius:14px;padding:26px;box-shadow:0 4px 18px rgba(11,37,69,.08);border-top:4px solid var(--dorado)}
+  .tarjeta h3{color:var(--azul);margin-bottom:8px;font-size:1.1rem}
+  .tarjeta p{color:var(--gris);font-size:.95rem}
+  .icono{font-size:2rem;margin-bottom:10px}
+  .texto-centro{max-width:800px;margin:0 auto;text-align:center;font-size:1.05rem}
+
+  /* Construcción */
+  #construccion{background:linear-gradient(135deg,#1f2937,#374151);color:#fff}
+  #construccion h2{color:var(--dorado)}
+  #construccion .subtitulo{color:#d1d5db}
+  #construccion .tarjeta{background:rgba(255,255,255,.07);box-shadow:none}
+  #construccion .tarjeta h3{color:#fff}
+  #construccion .tarjeta p{color:#d1d5db}
+  .franja{margin-top:36px;text-align:center}
+
+  /* Videos */
+  .video-pendiente{background:#fff;border:2px dashed #cbd5e1;border-radius:14px;padding:40px;text-align:center;color:var(--gris)}
+
+  /* Contacto */
+  .contacto-caja{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:800px;margin:0 auto}
+  .contacto-caja a{text-decoration:none}
+
+  footer{background:var(--azul);color:#cbd5e1;text-align:center;padding:30px 20px;font-size:.9rem}
+  footer strong{color:#fff}
+
+  /* Botón flotante WhatsApp */
+  .flotante{position:fixed;right:20px;bottom:20px;background:var(--verde);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:60}
+
+  @media (max-width:600px){
+    header h1{font-size:1.9rem}
+    h2{font-size:1.6rem}
+    .menu{gap:12px}
+    .menu a{font-size:.8rem}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="contenedor">
+    <a href="#inicio" class="logo">Srg <span>Grom</span></a>
+    <div class="menu">
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#construccion">Construcción</a>
+      <a href="#regimenes">Regímenes</a>
+      <a href="#videos">Videos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header id="inicio">
+  <div class="contenedor">
+    <h1>Srg Grom <span>Asesoría Fiscal</span></h1>
+    <p>Asesoría contable y fiscal para todo tipo de empresa: pequeño, mediano y gran negocio. Cumpla con el SAT, el IMSS y el INFONAVIT sin complicaciones.</p>
+    <div class="botones">
+      <a class="boton b-whats" href="https://wa.me/525531598806?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20fiscal" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+      <a class="boton b-dorado" href="#servicios">Ver servicios</a>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="contenedor">
+    <h2>Quiénes somos</h2>
+    <p class="texto-centro">Somos un despacho de asesoría contable y fiscal que acompaña a personas físicas y empresas en el cumplimiento de sus obligaciones. Explicamos su situación fiscal de forma clara y sin tecnicismos, para que tome decisiones informadas y evite multas, requerimientos y gastos innecesarios.</p>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="contenedor">
+    <h2>Servicios</h2>
+    <p class="subtitulo">Todo lo que su negocio necesita para estar en regla.</p>
+    <div class="rejilla">
+      <div class="tarjeta"><div class="icono">📊</div><h3>Contabilidad</h3><p>Registro contable mensual, estados financieros y conciliaciones.</p></div>
+      <div class="tarjeta"><div class="icono">🧾</div><h3>Declaraciones fiscales</h3><p>Declaraciones mensuales y anuales para personas físicas y morales.</p></div>
+      <div class="tarjeta"><div class="icono">👷</div><h3>Nómina e IMSS</h3><p>Cálculo de nómina, cuotas obrero-patronales, IMSS e INFONAVIT.</p></div>
+      <div class="tarjeta"><div class="icono">🛡️</div><h3>Atención a requerimientos</h3><p>Respuesta a cartas invitación y requerimientos de la autoridad.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="construccion">
+  <div class="contenedor">
+    <h2>Especialistas en el giro de construcción</h2>
+    <p class="subtitulo">Conocemos a fondo las obligaciones de las constructoras, porque hemos trabajado dentro del sector.</p>
+    <div class="rejilla">
+      <div class="tarjeta"><div class="icono">🏗️</div><h3>Registro de obra</h3><p>Alta, seguimiento y cierre de registros de obra ante el IMSS.</p></div>
+      <div class="tarjeta"><div class="icono">💻</div><h3>SIROC</h3><p>Manejo del Sistema de Registro de Obras de Construcción, incidencias y avisos de terminación.</p></div>
+      <div class="tarjeta"><div class="icono">📋</div><h3>REPSE</h3><p>Registro y cumplimiento de las declaraciones informativas cuatrimestrales de servicios especializados.</p></div>
+      <div class="tarjeta"><div class="icono">⚖️</div><h3>Informativas STPS</h3><p>Cumplimiento de las obligaciones informativas ante la Secretaría del Trabajo y Previsión Social.</p></div>
+    </div>
+    <div class="franja">
+      <a class="boton b-dorado" href="https://wa.me/525531598806?text=Hola%2C%20tengo%20una%20constructora%20y%20me%20interesa%20asesor%C3%ADa" target="_blank" rel="noopener">Asesoría para constructoras</a>
+    </div>
+  </div>
+</section>
+
+<section id="regimenes">
+  <div class="contenedor">
+    <h2>Regímenes fiscales</h2>
+    <p class="subtitulo">Le ayudamos a identificar el régimen que más le conviene.</p>
+    <div class="rejilla">
+      <div class="tarjeta"><h3>RESICO</h3><p>Régimen Simplificado de Confianza para personas físicas y morales con ingresos menores.</p></div>
+      <div class="tarjeta"><h3>Actividad empresarial y profesional</h3><p>Para personas físicas con negocio propio o que prestan servicios profesionales.</p></div>
+      <div class="tarjeta"><h3>Sueldos y salarios</h3><p>Declaración anual, deducciones personales y devoluciones de saldo a favor.</p></div>
+      <div class="tarjeta"><h3>Personas morales</h3><p>Régimen general de ley para sociedades, incluidas las SAS.</p></div>
+      <div class="tarjeta"><h3>Arrendamiento</h3><p>Ingresos por renta de casas, locales y otros inmuebles.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="videos">
+  <div class="contenedor">
+    <h2>Videos</h2>
+    <p class="subtitulo">Explicaciones fiscales sencillas y animadas en nuestro canal de YouTube.</p>
+    <div class="video-pendiente">
+      <div class="icono">🎬</div>
+      <p><strong>Muy pronto.</strong> Estamos preparando videos para que entienda sus impuestos de forma fácil.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="contenedor">
+    <h2>Contacto</h2>
+    <p class="subtitulo">Con gusto le atendemos. Escríbanos y le respondemos a la brevedad.</p>
+    <div class="contacto-caja">
+      <a class="tarjeta" href="https://wa.me/525531598806" target="_blank" rel="noopener"><div class="icono">💬</div><h3>WhatsApp</h3><p>55 3159 8806</p></a>
+      <a class="tarjeta" href="mailto:serchcoronaimax1@gmail.com"><div class="icono">✉️</div><h3>Correo</h3><p>serchcoronaimax1@gmail.com</p></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Srg Grom · Asesoría Contable y Fiscal</strong></p>
+  <p>Ecatepec, Estado de México · © 2026</p>
+</footer>
+
+<a class="flotante" href="https://wa.me/525531598806" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+</body>
+</html>
